@@ -8,7 +8,7 @@ The frontend uses NextJS with Typescript. It can be found in the `frontend` dire
 
 The transfers should be indexed using the Subgraph. The subgraph can be found in the `subgraph` directory.
 
-The backend should proxy to the subgraph and return the ownerships of a list of NFTs. The backend can be found in the `api` directory.
+The backend should proxy to the subgraph and return the ownerships of a list of NFTs. The backend should be coded in the `api` directory.
 
 You may choose any backend of your choice.
 
@@ -18,7 +18,7 @@ You may choose any backend of your choice.
 
    - There is an ABI at your convenience in the `src/abi/ directory`
    - The contract address to mint is in the `src/constants` folder
-   - The contract can be found <a href="https://sepolia.etherscan.io/address/0x7157df9d749836592569c0308b287f35f382188a#code"> here </a>
+   - The contract can be found <a target="_blank" href="https://sepolia.etherscan.io/address/0x7157df9d749836592569c0308b287f35f382188a#code"> here </a>
 
 2. Create the subgraph to index the transfers of the NFT
 
@@ -35,10 +35,11 @@ You may choose any backend of your choice.
 4. Hook up the frontend and backend
    - Grab the ownerships to display in the table
 5. Deploy the backend API any cloud provider of your choice
+   - Hookup the frontend to the deployed backend
 
 ## Libraries
 
-The frontend uses <a href="https://viem.sh/"> Viem </a> , <a href="https://wagmi.sh/react/getting-started"> WAGMI </a>, and <a href="https://www.rainbowkit.com/docs/introduction"> Rainbowkit </a> .
+The frontend uses <a target="_blank" href="https://viem.sh/"> Viem </a> , <a target="_blank" href="https://wagmi.sh/react/getting-started"> WAGMI </a>, and <a target="_blank" href="https://www.rainbowkit.com/docs/introduction"> Rainbowkit </a> .
 This is a default. You may choose to use it or not. This is just to speed up development. It's advised to use wagmi hooks to interact with the contract. It's also advised to use rainbowkit as the
 wallet connector.
 
