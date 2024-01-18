@@ -19,6 +19,7 @@ You may choose any backend of your choice.
    - There is an ABI at your convenience in the `src/abi/ directory`
    - The contract address to mint is in the `src/constants` folder
    - The contract can be found <a target="_blank" href="https://sepolia.etherscan.io/address/0x7157df9d749836592569c0308b287f35f382188a#code"> here </a>
+   - It's an ERC721 deployed on Sepolia
 
 2. Create the subgraph to index the transfers of the NFT
 
