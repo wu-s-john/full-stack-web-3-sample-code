@@ -1,6 +1,18 @@
-type ExampleEntity @entity {
-  id: Bytes!
-  count: BigInt!
-  owner: Bytes! # address
-  approved: Bytes! # address
+type NFT @entity {
+  id: ID!
+  owner: User!
+  tokenURI: String
+}
+
+type User @entity {
+  id: ID!
+  nfts: [NFT!]! @derivedFrom(field: "owner")
+}
+
+type Transfer @entity {
+  id: ID!
+  nft: NFT!
+  from: User!
+  to: User!
+  timestamp: BigInt!
 }
